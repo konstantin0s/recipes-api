@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // index.js
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -27,7 +28,7 @@ app
     next(err)
   })
 
-  // final error handler
+
   .use((err, req, res, next) => {
     res.status(err.status || 500)
     res.send({
@@ -39,3 +40,18 @@ app
   .listen(port, () => {
     console.log(`Server is listening on port ${port}`)
   })
+=======
+const express = require('express')
+
+const PORT = process.env.PORT || 3030
+
+let app = express()
+
+app.get('/', (req, res) => {
+  res.send('Hello from Express!')
+})
+
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`)
+})
+>>>>>>> 3c6ed3767e7ce853c1e436139b4b5f8bc8ad58cc

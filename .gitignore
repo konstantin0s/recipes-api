@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -22,3 +23,6 @@ yarn-error.log*
 
 # Compiled CSS
 *.css
+=======
+node_modules/
+>>>>>>> 3c6ed3767e7ce853c1e436139b4b5f8bc8ad58cc
