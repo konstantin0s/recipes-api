@@ -1,6 +1,7 @@
 {
   "name": "recipes-api",
   "version": "1.0.0",
+<<<<<<< HEAD
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -23,4 +24,9 @@
     "nodemon": "^1.14.11",
     "superagent": "^3.8.2"
   }
+=======
+  "description": "RESTful API to manage Recipes",
+  "main": "index.js",
+  "license": "MIT"
+>>>>>>> 6fd0c2685760d6865fc30db50814c43e811cb813
 }
