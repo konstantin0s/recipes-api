@@ -1,40 +1,26 @@
 {
-  "name": "recipes",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "history": "^4.7.2",
-    "material-design-icons": "^3.0.1",
-    "material-ui": "^1.0.0-beta.28",
-    "material-ui-icons": "^1.0.0-beta.17",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-router-redux": "^5.0.0-alpha.9",
-    "react-scripts": "1.0.17",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "superagent": "^3.8.2"
-  },
+  "name": "recipes-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node .",
+    "dev": "nodemon --inspect .",
+    "seed": "node db/seed.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.4.0"
   },
   "devDependencies": {
-    "breakpoint-sass": "^2.7.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest-enzyme": "^4.0.2",
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2",
-    "react-test-renderer": "^16.2.0",
-    "sinon": "^4.1.4"
+    "nodemon": "^1.14.11",
+    "superagent": "^3.8.2"
   }
 }
